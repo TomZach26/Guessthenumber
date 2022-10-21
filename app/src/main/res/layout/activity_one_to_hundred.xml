@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OneToHundred">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="7dp"
+        android:text="Enter your guess:"
+        android:textSize="30dp"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/okbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="311dp"
+        android:text="ok" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/okbutton"
+        android:layout_alignStart="@+id/okbutton"
+        android:layout_alignEnd="@+id/okbutton"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="-43dp"
+        android:layout_marginEnd="-183dp"
+        android:text="press ok to send your guess" />
+
+    <EditText
+        android:id="@+id/numberinput"
+        android:layout_width="339dp"
+        android:layout_height="59dp"
+        android:layout_alignBottom="@+id/okbutton"
+        android:layout_marginTop="-43dp"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:hint="Enter your guess here:"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignEnd="@+id/numberinput"
+        android:layout_marginTop="-136dp"
+        android:layout_marginEnd="-29dp"
+        android:scaleX="3"
+        android:scaleY="3"
+        android:text="1-100" />
+
+
+</RelativeLayout>
